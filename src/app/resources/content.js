@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Vildly",
+  lastName: "",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Design Engineer",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "Europe/Stockholm", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Swedish"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -52,18 +52,18 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing our work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Sensorer + AI = Smartare Beslut</>,
   subline: (
     <>
-      I'm Bjoern, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+       Få ut mer av din <InlineCode>sensordata</InlineCode> med AI. 
+       Bättre beslut, ökad effektivitet, håll dig i framkant.
     </>
   ),
 };
 
 const about = {
-  label: "About",
-  title: "About me",
+  label: "Om oss",
+  title: "Om oss",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
