@@ -89,21 +89,17 @@ const about = {
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Tjänster",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Dataanalys",
+        timeframe: "",
+        role: "",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+            Vi gör djupgående analyser av era data för att identifiera trender, mönster och avvikelser.
+             Detta ger er möjlighet att fatta välgrundade beslut, implementera förbättringar och öka effektiviteten.
+          </>
         ],
         images: [
           // optional: leave the array empty if you don't want to display images

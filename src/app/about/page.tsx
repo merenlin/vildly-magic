@@ -104,7 +104,7 @@ export default function About() {
         </Column>
       )}
       <Flex fillWidth mobileDirection="column" horizontal="center">
-        {about.avatar.display && (
+        {/* {about.avatar.display && (
           <Column
             className={styles.avatar}
             minWidth="160"
@@ -129,7 +129,7 @@ export default function About() {
               </Flex>
             )}
           </Column>
-        )}
+        )} */}
         <Column className={styles.blockAlign} flex={9} maxWidth={40}>
           <Column
             id={about.intro.title}
@@ -271,7 +271,7 @@ export default function About() {
             </>
           )}
 
-          {about.studies.display && (
+          {/* {about.studies.display && (
             <>
               <Heading as="h2" id={about.studies.title} variant="display-strong-s" marginBottom="m">
                 {about.studies.title}
@@ -289,9 +289,9 @@ export default function About() {
                 ))}
               </Column>
             </>
-          )}
+          )} */}
 
-          {about.technical.display && (
+          {/* {about.technical.display && (
             <>
               <Heading
                 as="h2"
@@ -301,7 +301,7 @@ export default function About() {
               >
                 {about.technical.title}
               </Heading>
-              <Column fillWidth gap="l">
+             <Column fillWidth gap="l">
                 {about.technical.skills.map((skill, index) => (
                   <Column key={`${skill}-${index}`} fillWidth gap="4">
                     <Text variant="heading-strong-l">{skill.title}</Text>
@@ -334,11 +334,11 @@ export default function About() {
                         ))}
                       </Flex>
                     )}
-                  </Column>
+                  </Column>  
                 ))}
               </Column>
             </>
-          )}
+          )}*/}
         </Column>
       </Flex>
     </Column>
