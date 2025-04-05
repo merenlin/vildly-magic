@@ -129,7 +129,7 @@ export default function About() {
               </Flex>
             )}
           </Column>
-        )} }
+        )} 
         <Column className={styles.blockAlign} flex={9} maxWidth={40}>
           <Column
             id={about.intro.title}
