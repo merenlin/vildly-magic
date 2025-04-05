@@ -1,5 +1,5 @@
 import { getPosts } from "@/app/utils/utils";
-import { Column } from "@/once-ui/components";
+import { Column, Flex } from "@/once-ui/components";
 import { ProjectCard } from "@/components";
 
 interface ProjectsProps {
@@ -18,7 +18,18 @@ export function Projects({ range }: ProjectsProps) {
     : sortedProjects;
 
   return (
-    <Column fillWidth gap="xl" marginBottom="40" paddingX="l">
+    <Flex
+      fillWidth
+      gap="xl"
+      marginBottom="40"
+      padding="l"
+      wrap
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(3, 1fr)",
+        gap: "var(--static-space-2xl)",
+      }}
+    >
       {displayedProjects.map((post, index) => (
         <ProjectCard
           priority={index < 2}
@@ -32,6 +43,6 @@ export function Projects({ range }: ProjectsProps) {
           link={post.metadata.link || ""}
         />
       ))}
-    </Column>
+    </Flex>
   );
 }

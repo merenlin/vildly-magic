@@ -91,7 +91,7 @@ export default function About() {
           }),
         }}
       />
-      {about.tableOfContent.display && (
+      {/*about.tableOfContent.display && (
         <Column
           left="0"
           style={{ top: "50%", transform: "translateY(-50%)" }}
@@ -102,9 +102,9 @@ export default function About() {
         >
           <TableOfContents structure={structure} about={about} />
         </Column>
-      )}
+      )*/}
       <Flex fillWidth mobileDirection="column" horizontal="center">
-        {/* {about.avatar.display && (
+        {about.avatar.display && (
           <Column
             className={styles.avatar}
             minWidth="160"
@@ -129,7 +129,7 @@ export default function About() {
               </Flex>
             )}
           </Column>
-        )} */}
+        )} }
         <Column className={styles.blockAlign} flex={9} maxWidth={40}>
           <Column
             id={about.intro.title}
@@ -138,31 +138,7 @@ export default function About() {
             vertical="center"
             marginBottom="32"
           >
-            {about.calendar.display && (
-              <Flex
-                fitWidth
-                border="brand-alpha-medium"
-                className={styles.blockAlign}
-                style={{
-                  backdropFilter: "blur(var(--static-space-1))",
-                }}
-                background="brand-alpha-weak"
-                radius="full"
-                padding="4"
-                gap="8"
-                marginBottom="m"
-                vertical="center"
-              >
-                <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
-                <Flex paddingX="8">Schedule a call</Flex>
-                <IconButton
-                  href={about.calendar.link}
-                  data-border="rounded"
-                  variant="secondary"
-                  icon="chevronRight"
-                />
-              </Flex>
-            )}
+           
             <Heading className={styles.textAlign} variant="display-strong-xl">
               {person.name}
             </Heading>
@@ -208,8 +184,8 @@ export default function About() {
               {about.intro.description}
             </Column>
           )}
-
-          {about.work.display && (
+ 
+          {/*about.work.display && (
             <>
               <Heading as="h2" id={about.work.title} variant="display-strong-s" marginBottom="m">
                 {about.work.title}
@@ -269,7 +245,7 @@ export default function About() {
                 ))}
               </Column>
             </>
-          )}
+          )*/}
 
           {/* {about.studies.display && (
             <>
@@ -339,6 +315,31 @@ export default function About() {
               </Column>
             </>
           )}*/}
+           {about.calendar.display && (
+              <Flex
+                fitWidth
+                border="brand-alpha-medium"
+                className={styles.blockAlign}
+                style={{
+                  backdropFilter: "blur(var(--static-space-1))",
+                }}
+                background="brand-alpha-weak"
+                radius="full"
+                padding="4"
+                gap="8"
+                marginBottom="m"
+                vertical="center"
+              >
+                <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
+                <Flex paddingX="8">Schedule a call</Flex>
+                <IconButton
+                  href={about.calendar.link}
+                  data-border="rounded"
+                  variant="secondary"
+                  icon="chevronRight"
+                />
+              </Flex>
+            )}
         </Column>
       </Flex>
     </Column>

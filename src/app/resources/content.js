@@ -1,12 +1,12 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Vildly",
+  firstName: "Vildly AB",
   lastName: "",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Full-Stack Engineering",
   avatar: "/images/avatar.jpg",
   location: "Europe/Stockholm", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Swedish"], // optional: Leave the array empty if you don't want to display languages
@@ -52,18 +52,17 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing our work as a ${person.role}`,
-  headline: <>Sensorer + AI = Smartare Beslut</>,
+  headline: <>Build What's Next</>,
   subline: (
     <>
-       Få ut mer av din <InlineCode>sensordata</InlineCode> med AI. 
-       Bättre beslut, ökad effektivitet, håll dig i framkant.
+      We combine deep technical expertise with strategic leadership for impactful AI & IoT solutions.
     </>
   ),
 };
 
 const about = {
-  label: "Om oss",
-  title: "Om oss",
+  label: "Vildly",
+  title: "About us",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -81,15 +80,19 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Vildly brings together deep technical expertise and strategic leadership to deliver
+         tailored AI and IoT solutions. Our extensive experience includes managing high-performing 
+         technical teams, developing innovative applications across diverse sectors, and a fundamental 
+         understanding of AI/ML, data engineering, MLOps, and IoT architecture. We believe in collaborative
+          partnerships to solve unique challenges.
+           Let's start a conversation about your specific needs and 
+          how our capabilities in AI and IoT can create significant value and open new opportunities for your organization.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Tjänster",
+    title: "Services",
     experiences: [
       {
         company: "Dataanalys",
