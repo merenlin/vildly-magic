@@ -125,7 +125,7 @@ export default function Home() {
           </RevealFx>
         </Column>
       </Flex>
-
+      
       {/* --- Project Summary Section --- */}
       <Column fillWidth gap="m">
         <RevealFx translateY="12" delay={0.6}>

@@ -16,6 +16,7 @@ interface AvatarProps extends React.ComponentProps<typeof Flex> {
   };
   style?: React.CSSProperties;
   className?: string;
+  priority?: boolean;
 }
 
 const sizeMapping: Record<"xs" | "s" | "m" | "l" | "xl", number> = {
@@ -35,7 +36,7 @@ const statusIndicatorSizeMapping: Record<"xs" | "s" | "m" | "l" | "xl", "s" | "m
 };
 
 const Avatar = forwardRef<HTMLDivElement, AvatarProps>(
-  ({ size = "m", value, src, loading, empty, statusIndicator, className, style, ...rest }, ref) => {
+  ({ size = "m", value, src, loading, empty, statusIndicator, className, style, priority, ...rest }, ref) => {
     const isEmpty = empty || (!src && !value);
 
     if (value && src) {
@@ -79,6 +80,7 @@ const Avatar = forwardRef<HTMLDivElement, AvatarProps>(
             alt="Avatar"
             sizes={`${sizeMapping[size]}px`}
             className={styles.image}
+            priority={priority}
           />
         );
       }

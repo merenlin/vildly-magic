@@ -60,7 +60,7 @@ export const Header = () => {
       >
         <Flex fillWidth horizontal="center">
           <Flex gap="s" vertical="center">
-            <Avatar src={person.avatar} size="l" />
+            <Avatar size="s" src="/images/avatar.jpg" priority />
             <Text variant="heading-strong-m">
               <SmartLink href="/">vildly</SmartLink>
             </Text>
