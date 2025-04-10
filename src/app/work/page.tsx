@@ -63,7 +63,7 @@ export default function Work() {
           }),
         }}
       />
-      <Projects />
+      <Projects range={[1,3]} />
     </Column>
   );
 }
