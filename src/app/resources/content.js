@@ -61,7 +61,7 @@ const home = {
 };
 
 const about = {
-  label: "Vildly",
+  label: "about",
   title: "About us",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
@@ -195,9 +195,9 @@ const blog = {
 };
 
 const work = {
-  label: "Work",
-  title: "My projects",
-  description: `Design and dev projects by ${person.name}`,
+  label: "projects",
+  title: "Our projects",
+  description: `Projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };

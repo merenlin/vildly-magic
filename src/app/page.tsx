@@ -51,18 +51,11 @@ export async function generateMetadata() {
 }
 
 export default function Home() {
-  // --- Project Data ---
-  // Adjust this line based on your actual project data source
-  // ENSURE 'about.work.experiences' contains objects with 'company', 'role', 'images', and 'url' properties
-  // Using the first 3 work experiences as projects
   const projectsToDisplay = about.work.experiences.slice(0, 3);
-  // Or if you have a dedicated projects array:
-  // const projectsToDisplay = projectsData.slice(0, 3);
 
   return (
   
     <Column maxWidth="xl" gap="s" horizontal="center" paddingBottom="xl">
-      {/* Schema remains the same */}
       <script
         type="application/ld+json"
         suppressHydrationWarning
